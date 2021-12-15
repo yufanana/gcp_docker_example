@@ -1,0 +1,5 @@
+steps:
+- name: 'eu.gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/${{ secrets.GCP_PROJECT_ID }}/testing', '.']
+- name: 'eu.gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/${{ secrets.GCP_PROJECT_ID }}/testing']
