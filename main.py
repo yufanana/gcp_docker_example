@@ -27,3 +27,4 @@ if __name__ == '__main__':
         f"Classification report for classifier {clf}:\n"
         f"{metrics.classification_report(y_test, predicted)}\n"
     )
+
